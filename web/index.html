@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Login | Student Management System</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/foundation.min.css" >
+        <link rel="stylesheet" href="assets/js/jquery/jquery-ui.min.css">
+        <link rel="stylesheet" href="assets/js/jquery/jquery-ui.structure.min.css">
+        <link rel="stylesheet" href="assets/js/jquery/jquery-ui.theme.min.css">
+        <script src="assets/js/jquery/external/jquery/jquery.js"></script>
+        <script src="assets/js/foundation.min.js"></script>
+        <script src="assets/js/jquery/jquery-ui.min.js"></script>
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+            }
+            body {
+                background-image: url("assets/img/bak.jpg");
+            }
+            .login-box {
+                opacity: 0.9;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="panel">
+            <div class="row">
+                 <div class="medium-8 medium-offset-2 columns">
+                    <h1 class="h1-login">Student Management System</h1>
+                </div>
+            </div>
+        </header>
+        <div class="row">
+            <div class="medium-4 medium-offset-4 columns">
+                <div class="login-box panel callout radius">
+                    <h2 class="login-header">Admin Login</h2>
+                    <form class="login-form" action="/processor/login.jsp" method="post">
+                        <div class="row">
+                            <div class="medium-12 columns">
+                                <label>Admin ID
+                                    <input type="text" placeholder="Admin ID" />
+                                 </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="medium-12 columns">
+                                <label>Password
+                                    <input type="password" placeholder="Password" />
+                                 </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="medium-12 columns">
+                                <input type="submit" class="button" value="Login">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
